@@ -1,0 +1,5 @@
+A transicao vai vindo de algum jeito com a cor mais escura atual e ao passar se precisar faz a troca para a nova cor mais escura para sempre so ter 4 cores na tela
+
+caracteres fonte:  "!\"$%'()*+,-./0123456789:;<=\>?\@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
+
+Cada boss obrigar o jogador a usar o upgrade que ganhou no ultimo

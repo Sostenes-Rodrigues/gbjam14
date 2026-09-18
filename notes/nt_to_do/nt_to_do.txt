@@ -1,0 +1,32 @@
+Pedir as paredes e portas
+
+
+
+    Selecao do menu so pelo teclado (Jogar, Controles [leva para outra room com um desenho dos controles e uma mensagem para apertar qualquer botao para voltar], Tela Cheia e Sair)
+
+
+Pensar em como garantir que o player saiba as teclas que foram escolhidas
+
+
+Segurar o Shift por 4 segundos para voltar ao menu (Isso precisa esta escrito na fala inicial)
+
+
+Paredes e porta
+
+
+Fazer uma lista de tudo que falta para o jogo e mais (textos dos dialogos, sfx, capa, Nome do Jogo)
+
+
+Colocar todo possivel ja nas cores do tile
+
+
+    Criar o primeiro boss
+
+
+A logica de entrar na sala do boss, ganhar a recompensa e recomecar se morrer
+
+
+Deixar o mouse invisivel
+
+
+Fazer ser jogado pelo controle
