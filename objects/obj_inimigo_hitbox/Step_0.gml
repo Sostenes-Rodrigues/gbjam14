@@ -1,7 +1,9 @@
 if type_meele{
     if instance_exists(inst_father){
-        x = inst_father.x
-        y = inst_father.y
+        if (speed == 0){
+            x = inst_father.x
+            y = inst_father.y
+        }
     }
 }
 else{

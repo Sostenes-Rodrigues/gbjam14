@@ -1,32 +1,45 @@
-Pedir as paredes e portas
+        Todos os bosses
 
 
 
-    Selecao do menu so pelo teclado (Jogar, Controles [leva para outra room com um desenho dos controles e uma mensagem para apertar qualquer botao para voltar], Tela Cheia e Sair)
+Lanca finalizar numa direcao fixa
+Cena final apos a transicao final com um desenho do protagonista com sua filha nos bracos
 
 
-Pensar em como garantir que o player saiba as teclas que foram escolhidas
+Corrigir o texto e traduzir para o ingles
 
 
-Segurar o Shift por 4 segundos para voltar ao menu (Isso precisa esta escrito na fala inicial)
-
-
-Paredes e porta
-
-
-Fazer uma lista de tudo que falta para o jogo e mais (textos dos dialogos, sfx, capa, Nome do Jogo)
-
-
-Colocar todo possivel ja nas cores do tile
-
-
-    Criar o primeiro boss
-
-
-A logica de entrar na sala do boss, ganhar a recompensa e recomecar se morrer
-
-
-Deixar o mouse invisivel
+Colocar as musicas e SFX no jogo
 
 
 Fazer ser jogado pelo controle
+
+
+
+
+
+
+
+Sprites:
+    bosses
+    npc
+    arma (armas, sei la)
+    tela inicial
+    capa da pagina da jam
+
+Sons:
+    Musicas:
+        anubis
+    
+    SFX:
+        dash
+        ataque de espada
+        bloqueio do escudo
+        player tomando dano
+        player morrendo
+        navegação menu
+
+Outros:
+    Textos dos dialogos
+    Texto do fim de jogo
+    Nome do jogo

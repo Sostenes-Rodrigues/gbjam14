@@ -15,7 +15,7 @@
 
 
 /// As cores originais
-#macro COR1_ORI make_colour_rgb(56, 28, 46)
-#macro COR2_ORI make_colour_rgb(105, 109, 109)
-#macro COR3_ORI make_colour_rgb(255, 166, 84)
-#macro COR4_ORI make_colour_rgb(255, 215, 101)
+#macro COR1_ORI make_colour_rgb(63, 63, 116)
+#macro COR2_ORI make_colour_rgb(61, 73, 145)
+#macro COR3_ORI make_colour_rgb(48, 96, 130)
+#macro COR4_ORI make_colour_rgb(91, 110, 225)

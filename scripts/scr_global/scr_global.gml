@@ -4,17 +4,17 @@ global.debug = false // Mudar depois
 
 
 /// Cores do jogo atualmente (a sequencia vai da cor mais escura ate a mais clara)
-global.cor1 = make_colour_rgb(56, 28, 46);
-global.cor2 = make_colour_rgb(105, 109, 109)
-global.cor3 = make_colour_rgb(255, 166, 84)
-global.cor4 = make_colour_rgb(255, 215, 101)
+global.cor1 = make_colour_rgb(63, 63, 116)
+global.cor2 = make_colour_rgb(61, 73, 145)
+global.cor3 = make_colour_rgb(48, 96, 130)
+global.cor4 = make_colour_rgb(91, 110, 225)
 
 
 /// Os upgrades desbloqueados
-global.upgrade_tiro_fraco = false
-global.upgrade_dash = false
-global.upgrade_tiro_carregado = false
-global.upgrade_meele = false
+global.upgrade_tiro_fraco = true
+global.upgrade_dash = true
+global.upgrade_meele = true
+global.upgrade_tiro_carregado = true
 global.upgrade_escudo = false
 global.upgrade_aura = false
 

@@ -1,0 +1,2 @@
+// Rodando o estado
+estado()

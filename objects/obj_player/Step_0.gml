@@ -49,6 +49,9 @@ if !player_in_grid_move{
 /// Passando o tempo de ficar invencivel
 timer_invi = clamp(timer_invi - 1, 0, timer_invi_restart)
 
+/// Passando o tempo do meele
+timer_meele = clamp(timer_meele - 1, 0, timer_meele_restart)
+
 // Atualizando a posicao da camera
 camera_set_view_pos(view_camera[0], floor(cam_pos_x), floor(cam_pos_y))
 

@@ -11,6 +11,10 @@ if type_meele{
                 _inst_ene.life -= damage
                 _inst_ene.image_alpha = 0
                 _inst_ene.alarm[0] = 1
+                
+                if (_inst_ene.life < 1){
+                    _inst_ene.estado = _inst_ene.estado_death
+                }
             }
         }
     }
@@ -25,6 +29,10 @@ else{
             _inst_ene.life -= damage
             _inst_ene.image_alpha = 0
             _inst_ene.alarm[0] = 1
+            
+            if (_inst_ene.life < 1){
+                _inst_ene.estado = _inst_ene.estado_death
+            }
             
             instance_destroy(id)
         }

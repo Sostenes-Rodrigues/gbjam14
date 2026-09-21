@@ -29,7 +29,7 @@ text_count = 1
 text_write = ""
 
 // Velocidade do efeito da maquina de escrever
-spd_write = 0.3
+spd_write = 0.2
 
 
 //
@@ -37,6 +37,9 @@ inst_father = noone
 
 
 restart_variables = function(){
+    //
+    array_text_len = array_length(array_texts)
+    
     // String do texto atual
     text = array_texts[array_text_count]
     
@@ -50,3 +53,20 @@ restart_variables = function(){
     // String Escrita na tela
     text_write = ""
 }
+
+
+
+
+big_text = ""
+big_text_yscale = 1
+
+//
+can_continue = false
+alarm[0] = 1.5 * FPS_GAME
+
+
+///
+obj_player.spdh = 0
+obj_player.spdv = 0
+obj_player.image_speed = 0
+obj_player.image_index = 0

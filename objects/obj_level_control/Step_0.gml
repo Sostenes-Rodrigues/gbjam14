@@ -1,3 +1,21 @@
+/*
+/// Sair para o menu
+if keyboard_check_pressed(vk_enter){
+    if !instance_exists(obj_transicao){
+        var _inst_transi = instance_create_layer(0, 0, "Transi", obj_transicao)
+        _inst_transi.next_room = rm_selecao
+        
+        _inst_transi.method_end = function(){
+            if instance_exists(obj_selecao_control){
+                obj_selecao_control.active = true
+            }
+        }
+    }
+}
+*/
+
+
+
 if global.debug{
     /// Debug para ativar e desativar os upgrades
     /// Tiro fraco

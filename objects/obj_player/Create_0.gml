@@ -28,7 +28,7 @@ start = false
 spdh = 0
 spdv = 0
 spd = 0
-spd_max = 0.75
+spd_max = 1
 
 // Varivel de controle se o player esta no meio da trasicao de grid
 player_in_grid_move = false
@@ -36,6 +36,9 @@ player_in_grid_move = false
 ///
 timer_dash_restart = 3 * FPS_GAME
 timer_dash = 0
+
+timer_meele_restart = 2.5 * FPS_GAME
+timer_meele = 0
 
 //
 dir_view = 270
@@ -70,9 +73,14 @@ aura_timer_part = 0
 #region Metodos
 // Para ativar todas as instancias no local da grid atual
 enable_insts_grid = function(){
-    var _pos_left = camera_get_view_x(view_camera[0]) + GB_XX
-    var _pos_top  = camera_get_view_y(view_camera[0])
-    instance_activate_region(_pos_left, _pos_top, GB_WIDTH - 1, GB_HEIGHT, true)
+    var _pos_left = camera_get_view_x(view_camera[0]) + GB_XX - 5
+    var _pos_top  = camera_get_view_y(view_camera[0]) - 5
+    instance_activate_region(_pos_left, _pos_top, GB_WIDTH + 10, GB_HEIGHT + 10, true)
+    
+    /// Se tem um boss nessa grid, ativo ele
+    with (obj_inimigo_pai) {
+    	estado = estado_entrar
+    }
 }
 
 
@@ -419,8 +427,7 @@ estado_attack = function(){
     static __timer_tiro_fraco = 0
     static __timer_tiro_carregado_restart = 2 * FPS_GAME
     static __timer_tiro_carregado = 0
-    static __timer_meele_restart = 1 * FPS_GAME
-    static __timer_meele = 0
+    
     
     // Se e o primeiro frame ao entrar nesse estado
     if (estado_txt != "attack"){
@@ -487,19 +494,17 @@ estado_attack = function(){
     }
     
     if global.upgrade_meele{
-        // Passando o tempo para o ataque do tiro fraco
-        __timer_meele --
         // Se acabou o tempo para o proximo ataque
-        if (__timer_meele < 1){
+        if (timer_meele < 1){
             // Resetando o tempo de espera
-            __timer_meele = __timer_meele_restart
+            timer_meele = timer_meele_restart
             
             // Criando a instancia do ataque meele
             var _inst_meele = instance_create_depth(x, y, depth + _att_depth, obj_player_hitbox)
             _inst_meele.sprite_index = spr_player_attack_meele_side
             _inst_meele.image_angle = dir_view
             _inst_meele.type_meele = true
-            _inst_meele.damage = 15
+            _inst_meele.damage = 30
         }
     }
     #endregion
@@ -627,7 +632,8 @@ estado_death = function(){
                 with (_inst_boss) {
                 	x = xstart
                     y = ystart
-                    att = false
+                    
+                    estado = estado_espera
                 }
             }
             
@@ -646,7 +652,9 @@ estado_death = function(){
                 
                 var _inst_boss = instance_nearest(_x_player, _y_player, obj_inimigo_pai)
                 with (_inst_boss) {
-                	estado = estado_idle
+                    life = life_max
+                    
+                	estado = estado_entrar
                 }
             }
         }
@@ -654,6 +662,11 @@ estado_death = function(){
 }
 
 estado_espera = function(){
+    // Se e o primeiro frame ao entrar nesse estado
+    if (estado_txt != "espera"){
+        estado_txt = "espera"
+    }
+    
     spdh = 0
     spdv = 0
 }

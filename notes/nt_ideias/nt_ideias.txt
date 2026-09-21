@@ -3,3 +3,38 @@ A transicao vai vindo de algum jeito com a cor mais escura atual e ao passar se 
 caracteres fonte:  "!\"$%'()*+,-./0123456789:;<=\>?\@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_abcdefghijklmnopqrstuvwxyz{|}~"
 
 Cada boss obrigar o jogador a usar o upgrade que ganhou no ultimo
+
+
+
+Merlin: destroi balas proximas, teleporta ao receber o ataque meele, tem que rebater a bola de fogo
+
+Final Boss: Bullet Hell como o delirion de Issac, tiros balancantes de cima e da direita
+
+
+
+
+Dialogos:
+
+ola estranho
+
+deve ser alguem bem ambicioso pra adentrar nessa masmorra
+
+boneco[ quem é vc?
+    
+arauto[eu sou o arauto desse lugar
+
+arauto[se esta aqui procura enfrentar os campeões
+    
+aralto[para receber um desejo
+    
+arauto[muitos tentaram e muitos falharao
+    
+arauto[vc teria culhoes para isso?
+
+boneco[ sim
+    
+arauto[ esses desafios possuem regras nas quais nao é permitido o uso de armas de fora
+    
+arauto[usara somente armas q lhe forem dadas
+    
+arauto[vamos adentre o primeiro portao

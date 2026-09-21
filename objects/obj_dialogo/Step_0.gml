@@ -4,7 +4,7 @@ text_count = clamp(text_count + spd_write, 1, text_len)
 // Se terminei de escrever o texto
 if (text_count >= text_len){
     // Se apertei um botao
-    if keyboard_check_pressed(vk_anykey){
+    if can_continue and keyboard_check_pressed(vk_anykey){
         // Se ainda tem outros textos
         if (array_text_count < array_text_len - 1){
             array_text_count += 1
@@ -19,6 +19,7 @@ if (text_count >= text_len){
         	//
             with (obj_player) {
                 player_in_grid_move = false
+                image_speed = 1
             	estado = estado_idle
             }
             

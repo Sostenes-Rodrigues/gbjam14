@@ -7,8 +7,24 @@ if instance_exists(obj_player){
     var _life = obj_player.life
     
     for (var i = 0; i < _life; i++) {
-    	var _margem_x = 9 * i
-        draw_sprite(spr_player_life, 0, 7 + GB_XX + _margem_x + _x_gui, 7 + _y_gui)
+        var _xscale = 1
+        var _yscale = 1
+        
+        if (i % 2) == 0{
+            if par_big{
+                _xscale = 2
+                _yscale = 2
+            }
+        }
+        else {
+        	if !par_big{
+                _xscale = 2
+                _yscale = 2
+            }
+        }
+        
+    	var _margem_x = 13 * i
+        draw_sprite_ext(spr_player_life, 0, 11 + GB_XX + _margem_x + _x_gui, 11 + _y_gui, _xscale, _yscale, 0, c_white, 1)
     }
 }
 
