@@ -15,7 +15,7 @@ if (estado_txt == "entrar"){
 
     
     // Big Text
-    draw_sprite_ext(sprite_index, 0, x, y - 70, 1.05, 1.05 * big_text_yscale, 0, c_white, 1)
+    draw_sprite_ext(spr_dialogo, 0, _x_mid, _y_mid - 40, 1.05, 1.05 * big_text_yscale, 0, c_white, 1)
     draw_set_colour(global.cor1)
     draw_text_transformed(_x_mid + 1, _y_mid - 40 + 1, my_name, 2, 2, 0)
     draw_set_colour(global.cor4)

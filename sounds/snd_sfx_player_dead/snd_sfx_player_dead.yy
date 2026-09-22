@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_sfx_player_dead.wav",
-  "volume":0.6,
+  "volume":0.52,
 }

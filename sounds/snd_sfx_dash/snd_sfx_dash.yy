@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_sfx_dash.wav",
-  "volume":0.7,
+  "volume":0.6,
 }

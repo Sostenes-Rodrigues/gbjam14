@@ -28,6 +28,8 @@ if (text_count >= text_len){
             	in_dialogue = false
             }
             
+            method_end()
+            
             // Me destruindo
             instance_destroy(id)
         }

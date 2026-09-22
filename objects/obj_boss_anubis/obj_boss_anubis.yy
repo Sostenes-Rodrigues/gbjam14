@@ -3,6 +3,7 @@
   "%Name":"obj_boss_anubis",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_boss_anubis",
@@ -33,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_anubis_charge_attack",
-    "path":"sprites/spr_anubis_charge_attack/spr_anubis_charge_attack.yy",
+    "name":"spr_anubis_idle",
+    "path":"sprites/spr_anubis_idle/spr_anubis_idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

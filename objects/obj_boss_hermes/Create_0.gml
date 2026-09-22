@@ -1,9 +1,3 @@
-if global.upgrade_dash{
-    instance_destroy(id)
-    exit
-}
-
-
 // Inherit the parent event
 event_inherited();
 
@@ -11,7 +5,7 @@ event_inherited();
 
 #region Unique Variables
 /// Vida do inimigo
-life_max = 55
+life_max = 52
 //life_max = 3
 life = life_max
 
@@ -27,7 +21,9 @@ my_upgrade_desc = ["Allows you to dash when you press the \“Z\”"]
 my_name = "Hermes"
 
 // Minha musica tema
-//my_music = snd_music_
+my_music = snd_music_hermes
+
+big_text_yscale_desc = 1.2
 
 // O ID da instancia da porta que devo fecha oa comecar
 inst_door = inst_2D436010

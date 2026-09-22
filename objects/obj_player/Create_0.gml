@@ -246,6 +246,8 @@ tomar_dano = function(){
                     if !type_meele and other.escudo_enable and (abs(_dir_player - _escudo_comp_dir) < 90){
                         _can_hurt = false
                         
+                        audio_play_sound(snd_sfx_shield, 5, false, 1, 0, 2)
+                        
                         instance_destroy(id)
                     }
                 }
@@ -255,6 +257,8 @@ tomar_dano = function(){
             // Posso tomar dano
             if _can_hurt {
             	life --
+                
+                audio_play_sound(snd_sfx_player_hurt, 5, false)
                 
                 if (life < 1){
                     estado = estado_death
@@ -473,6 +477,8 @@ estado_attack = function(){
             _inst_shoot.sprite_index = spr_shoot
             _inst_shoot.speed = 2
             _inst_shoot.direction = dir_view
+            
+            audio_play_sound(snd_sfx_shoot, 5, false, 1, 0, 3)
         }
     }
     
@@ -490,6 +496,8 @@ estado_attack = function(){
             _inst_shoot.speed = 3
             _inst_shoot.direction = dir_view
             _inst_shoot.damage = 4
+            
+            audio_play_sound(snd_sfx_shoot_big, 5, false, 1, 0, 3)
         }
     }
     
@@ -498,6 +506,9 @@ estado_attack = function(){
         if (timer_meele < 1){
             // Resetando o tempo de espera
             timer_meele = timer_meele_restart
+            
+            // Som do ataque meele
+            audio_play_sound(snd_sfx_meele, 5, false, 1, 0, 4)
             
             // Criando a instancia do ataque meele
             var _inst_meele = instance_create_depth(x, y, depth + _att_depth, obj_player_hitbox)
@@ -532,6 +543,10 @@ estado_dash = function(){
     // Se e o primeiro frame ao entrar nesse estado
     if (estado_txt != "dash"){
         estado_txt = "dash"
+        
+        
+        // Som do dash
+        audio_play_sound(snd_sfx_dash, 5, false, 1, 0, 4)
         
         /// Retornando a velocidade da sprite e deixando ela no move
         image_speed = 1
@@ -578,6 +593,10 @@ estado_death = function(){
     // Se e o primeiro frame ao entrar nesse estado
     if (estado_txt != "death"){
         estado_txt = "death"
+        
+        
+        // Som do player morrendo
+        audio_play_sound(snd_sfx_player_dead, 5, false)
         
         /// Retornando a velocidade da sprite e deixando ela no
         image_speed = 1

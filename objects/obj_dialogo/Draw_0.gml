@@ -24,6 +24,8 @@ if is_string(text){
     
     // Big Text
     if (big_text != ""){
+        draw_set_halign(fa_center)
+        draw_set_valign(fa_middle)
         draw_sprite_ext(sprite_index, 0, x, y - 70, 1.05, 1.05 * big_text_yscale, 0, c_white, 1)
         draw_set_colour(global.cor1)
         draw_text_transformed(x + 1, y - 70 + 1, big_text, 2, 2, 0)

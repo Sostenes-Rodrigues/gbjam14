@@ -1,0 +1,1 @@
+audio_play_sound(snd_sfx_shoot_coli, 5, false, 1, 0, 3)

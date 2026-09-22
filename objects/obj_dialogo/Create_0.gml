@@ -54,7 +54,9 @@ restart_variables = function(){
     text_write = ""
 }
 
-
+method_end = function(){
+    
+}
 
 
 big_text = ""
@@ -66,7 +68,9 @@ alarm[0] = 1.5 * FPS_GAME
 
 
 ///
-obj_player.spdh = 0
-obj_player.spdv = 0
-obj_player.image_speed = 0
-obj_player.image_index = 0
+if instance_exists(obj_player){
+    obj_player.spdh = 0
+    obj_player.spdv = 0
+    obj_player.image_speed = 0
+    obj_player.image_index = 0
+}

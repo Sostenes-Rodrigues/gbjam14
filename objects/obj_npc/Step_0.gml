@@ -27,9 +27,9 @@ if global.upgrade_tiro_fraco{      /// ao vencer o primeiro boss
 }
 else {                                  /// ao chegar
 	my_dialogue = ["Hello, stranger.", "You must be quite ambitious...", "to enter this dungeon.", "Who are you?", 
-    "I am the herald of this place.", "If you are here, you seek to face...", "the champions to have a wish granted.", 
-    "Do you have the guts for it?", "Yes, I have nothing left to lose"]
-    my_dialogue_names = ["???", "???", "???", "Armando", "Herald", "Herald", "Herald", "Herald", "Armando"]
+    "I am the herald of this place.", "If you are here, you seek to face", "the champions to have a wish granted.", 
+    "Do you have the guts for it?", "Yes, I have nothing left to lose", "Great, it's dangerous to go alone.", "Take this weapon to defeat the...", "champions. Use X to attack."]
+    my_dialogue_names = ["???", "???", "???", "Rya", "Herald", "Herald", "Herald", "Herald", "Rya", "Herald", "Herald", "Herald"]
 }
 #endregion
 

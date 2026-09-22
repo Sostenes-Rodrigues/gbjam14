@@ -14,7 +14,7 @@ spd_max = 1
 
 // O Upgrade dado ao ser derrotado
 my_upgrade = "upgrade_tiro_carregado"
-my_upgrade_title = " Magic\n Staff"
+my_upgrade_title = "Magic\nStaff"
 my_upgrade_desc = ["Charge shot alongside the base shot"]
 
 // Nome do boss
@@ -22,6 +22,9 @@ my_name = "\nMerlin\nthe\nWizard"
 
 // Minha musica tema
 my_music = snd_music_merlin
+
+big_text_yscale = 2
+big_text_yscale_desc = 1.3
 
 // O ID da instancia da porta que devo fecha oa comecar
 inst_door = inst_5148D04A

@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_sfx_menu_navi.wav",
-  "volume":1.0,
+  "volume":0.4,
 }

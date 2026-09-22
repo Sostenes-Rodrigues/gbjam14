@@ -23,6 +23,9 @@ my_name = "King\nArthur"
 // Minha musica tema
 my_music = snd_music_arthur
 
+big_text_yscale = 1.3
+big_text_yscale_desc = 1.3
+
 // O ID da instancia da porta que devo fecha oa comecar
 inst_door = inst_77578807
 #endregion

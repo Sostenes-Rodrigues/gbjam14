@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":5512,
   "soundFile":"snd_sfx_shoot_big.wav",
-  "volume":0.5,
+  "volume":0.4,
 }

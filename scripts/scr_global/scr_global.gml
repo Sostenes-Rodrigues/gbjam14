@@ -11,10 +11,10 @@ global.cor4 = make_colour_rgb(91, 110, 225)
 
 
 /// Os upgrades desbloqueados
-global.upgrade_tiro_fraco = true
-global.upgrade_dash = true
-global.upgrade_meele = true
-global.upgrade_tiro_carregado = true
+global.upgrade_tiro_fraco = false
+global.upgrade_dash = false
+global.upgrade_meele = false
+global.upgrade_tiro_carregado = false
 global.upgrade_escudo = false
 global.upgrade_aura = false
 

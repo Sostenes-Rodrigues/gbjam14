@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":22050,
   "soundFile":"snd_music_merlin.mp3",
-  "volume":0.4,
+  "volume":0.26,
 }

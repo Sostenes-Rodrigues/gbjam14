@@ -1,4 +1,4 @@
-if true{ // Bugado TARGET_DEBUG
+if false{ // Bugado TARGET_DEBUG
     /// Switch debug mode
     if keyboard_check_pressed(vk_f3){
         global.debug = !global.debug

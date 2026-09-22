@@ -1,15 +1,6 @@
-        Todos os bosses
+Exportar para linux, windows e html5
 
 
-
-Lanca finalizar numa direcao fixa
-Cena final apos a transicao final com um desenho do protagonista com sua filha nos bracos
-
-
-Corrigir o texto e traduzir para o ingles
-
-
-Colocar as musicas e SFX no jogo
 
 
 Fazer ser jogado pelo controle

@@ -15,13 +15,15 @@ spd_max = 1
 // O Upgrade dado ao ser derrotado
 my_upgrade = "upgrade_escudo"
 my_upgrade_title = "Olympus\nShield"
-my_upgrade_desc = ["Standing still without attacking activates the shield, it blocks projectiles in front of you"]
+my_upgrade_desc = ["Standing still without attacking...", "activates the shield, it blocks...", "projectiles in front of you"]
 
 // Nome do boss
 my_name = "Athena"
 
 // Minha musica tema
-//my_music = snd_music_
+my_music = snd_music_athena
+
+big_text_yscale_desc = 1.3
 
 // O ID da instancia da porta que devo fecha oa comecar
 inst_door = inst_54BF4E91

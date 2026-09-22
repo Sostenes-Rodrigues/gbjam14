@@ -2,10 +2,10 @@
   "$GMSprite":"v2",
   "%Name":"spr_escudo_segurado",
   "bboxMode":0,
-  "bbox_bottom":14,
+  "bbox_bottom":16,
   "bbox_left":13,
-  "bbox_right":14,
-  "bbox_top":2,
+  "bbox_right":16,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "ConfigValues":{

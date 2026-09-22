@@ -17,6 +17,7 @@ my_upgrade_desc = ["faz alguma porra"]
 my_name = "Noone"
 
 big_text_yscale = 1
+big_text_yscale_desc = 1
 
 // Minha musica tema
 my_music = noone
@@ -88,6 +89,9 @@ estado_death = function(){
         estado_txt = "death"
         
         
+        // Som do boss morrendo
+        audio_play_sound(snd_sfx_boss_death, 5, false)
+        
         spdh = 0
         spdv = 0
         
@@ -126,7 +130,14 @@ estado_death = function(){
                 
             	array_texts = other.my_upgrade_desc
                 big_text = other.my_upgrade_title
+                big_text_yscale = other.big_text_yscale_desc
                 array_texts_names = [""]
+                
+                method_end = function(){
+                    if !audio_is_playing(snd_music_calm){
+                        audio_play_sound(snd_music_calm, 0, true)
+                    }
+                }
                 
                 restart_variables()
             }

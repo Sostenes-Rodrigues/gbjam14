@@ -9,10 +9,10 @@ draw_set_valign(fa_middle)
 
 
 draw_set_colour(global.cor1)
-draw_text(x + 1, bbox_bottom + 14 + 1, "Press any\nvalid button\nto continue")
+draw_text(x + 1, bbox_bottom - 25 + 1, "Press any\nvalid button\nto continue")
 
 draw_set_colour(global.cor4)
-draw_text(x, bbox_bottom + 14, "Press any\nvalid button\nto continue")
+draw_text(x, bbox_bottom - 25, "Press any\nvalid button\nto continue")
 
 
 draw_set_font(-1)
